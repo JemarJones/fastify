@@ -7,6 +7,7 @@
 import * as http from 'http'
 import * as http2 from 'http2'
 import * as https from 'https'
+import { JSONSchema7 } from 'json-schema'
 
 declare function fastify<
   HttpServer extends (http.Server | http2.Http2Server) = http.Server,
@@ -214,8 +215,7 @@ declare namespace fastify {
   }
   interface ServerOptionsAsSecureHttp2 extends ServerOptionsAsHttp2, ServerOptionsAsSecure {}
 
-  // TODO - define/import JSONSchema types
-  type JSONSchema = Object
+  type JSONSchema = JSONSchema7
 
   interface RouteSchema {
     body?: JSONSchema

@@ -131,6 +131,7 @@
     "x-xss-protection": "^1.1.0"
   },
   "dependencies": {
+    "@types/json-schema": "^7.0.3",
     "abstract-logging": "^1.0.0",
     "ajv": "^6.10.2",
     "avvio": "^6.1.1",
